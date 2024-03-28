@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    background-color: black;
+    color: white;
+}
+
+#dealer-cards img,
+#my-cards img {
+    height: 350px;
+    width: 250px;
+    margin: 1px;
+}
+
+#results {
+    font-size: 40px;
+}
+
+#hit,
+#stand {
+    width: 150px;
+    height: 75px;
+    font-size: 40px;
+}
+
+#newGame {
+    width: 150px;
+    height: 100px;
+    font-size: 40px;
+}
+
+.tooltip_hover {
+    position: relative;
+}
+
+.tooltip_text {
+  position: absolute;
+}
+
+.tooltip_text:after {
+    content: "";
+}

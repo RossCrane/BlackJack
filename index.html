@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Black Jack</title>
+        <link rel="stylesheet" href="blackjack.css">
+        <script src="blackjack.js"></script>       
+    </head>
+
+    <body>
+        <header>
+            <h1>Black Jack</h1>
+        </header>
+        <section id="dealer"> 
+          <h2>Dealer: <span id="dealer-sum"></span></h2> 
+          <div id="dealer-cards">
+            <img id="hidden" src="./cards/BACK.png">
+          </div>
+          <p id="dealer-sum"></p>
+        </section>
+        <br>
+        <section id="player">
+            <h2>Player: <span id="my-sum"></span></h2>
+            <div id="my-cards"></div>
+            <p id="my-sum"></p>
+          </section>
+          <section id="actions">
+            <span class="tooltip_hover" title="This button allows you to collect a new card with a goal of reaching 21 without exceeding it."> <button id="hit">Hit</button></span>
+            <span class="tooltip_hover" title="This button will conclude the round and flip the dealers hidden card."> <button id="stand">Stand</button></span>
+            <br>
+            <br>
+            <button id="newGame" onClick="newGame()">New Game</button>
+          </section>
+        <p id="results"></p>
+    </body>
+</html>
